@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18089297951E56522A157F5F /* Pods_ParkingFCU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F91AEFA101D543812441A0AA /* Pods_ParkingFCU.framework */; };
 		B17A3BF020B2C79500104373 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17A3BEF20B2C79500104373 /* AppDelegate.swift */; };
 		B17A3BF220B2C79500104373 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17A3BF120B2C79500104373 /* ViewController.swift */; };
 		B17A3BF520B2C79500104373 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B17A3BF320B2C79500104373 /* Main.storyboard */; };
 		B17A3BF720B2C79A00104373 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B17A3BF620B2C79A00104373 /* Assets.xcassets */; };
 		B17A3BFA20B2C79A00104373 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B17A3BF820B2C79A00104373 /* LaunchScreen.storyboard */; };
+		B17A3C0520B2F8F300104373 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17A3C0420B2F8F300104373 /* MainViewController.swift */; };
+		B17A3C0720B2F90800104373 /* MonitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17A3C0620B2F90800104373 /* MonitorViewController.swift */; };
+		B17A3C0920B2F91400104373 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17A3C0820B2F91400104373 /* ReportViewController.swift */; };
+		B17A3C0B20B2F97700104373 /* PKVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17A3C0A20B2F97700104373 /* PKVideo.swift */; };
+		B17A3C0D20B2FFF400104373 /* PKConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17A3C0C20B2FFF400104373 /* PKConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D0268ED2CA36A8953C240B2 /* Pods-ParkingFCU.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkingFCU.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParkingFCU/Pods-ParkingFCU.release.xcconfig"; sourceTree = "<group>"; };
 		B17A3BEC20B2C79500104373 /* ParkingFCU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkingFCU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B17A3BEF20B2C79500104373 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B17A3BF120B2C79500104373 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,13 @@
 		B17A3BF620B2C79A00104373 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B17A3BF920B2C79A00104373 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B17A3BFB20B2C79A00104373 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B17A3C0420B2F8F300104373 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		B17A3C0620B2F90800104373 /* MonitorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitorViewController.swift; sourceTree = "<group>"; };
+		B17A3C0820B2F91400104373 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
+		B17A3C0A20B2F97700104373 /* PKVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKVideo.swift; sourceTree = "<group>"; };
+		B17A3C0C20B2FFF400104373 /* PKConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKConfig.swift; sourceTree = "<group>"; };
+		E30E4C15BF5D2722EA0AE3C5 /* Pods-ParkingFCU.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkingFCU.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParkingFCU/Pods-ParkingFCU.debug.xcconfig"; sourceTree = "<group>"; };
+		F91AEFA101D543812441A0AA /* Pods_ParkingFCU.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParkingFCU.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +43,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18089297951E56522A157F5F /* Pods_ParkingFCU.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9485E0A4DF57822865292B13 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F91AEFA101D543812441A0AA /* Pods_ParkingFCU.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B17A3BE320B2C79500104373 = {
 			isa = PBXGroup;
 			children = (
 				B17A3BEE20B2C79500104373 /* ParkingFCU */,
 				B17A3BED20B2C79500104373 /* Products */,
+				E13A2D1E1AD82688C81492CA /* Pods */,
+				9485E0A4DF57822865292B13 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +79,52 @@
 		B17A3BEE20B2C79500104373 /* ParkingFCU */ = {
 			isa = PBXGroup;
 			children = (
-				B17A3BEF20B2C79500104373 /* AppDelegate.swift */,
-				B17A3BF120B2C79500104373 /* ViewController.swift */,
-				B17A3BF320B2C79500104373 /* Main.storyboard */,
+				B17A3C0220B2F89800104373 /* Module */,
+				B17A3C0120B2F89400104373 /* VC */,
+				B17A3C0320B2F89E00104373 /* View */,
 				B17A3BF620B2C79A00104373 /* Assets.xcassets */,
-				B17A3BF820B2C79A00104373 /* LaunchScreen.storyboard */,
 				B17A3BFB20B2C79A00104373 /* Info.plist */,
 			);
 			path = ParkingFCU;
+			sourceTree = "<group>";
+		};
+		B17A3C0120B2F89400104373 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				B17A3BF120B2C79500104373 /* ViewController.swift */,
+				B17A3C0420B2F8F300104373 /* MainViewController.swift */,
+				B17A3C0620B2F90800104373 /* MonitorViewController.swift */,
+				B17A3C0820B2F91400104373 /* ReportViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		B17A3C0220B2F89800104373 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				B17A3BEF20B2C79500104373 /* AppDelegate.swift */,
+				B17A3C0A20B2F97700104373 /* PKVideo.swift */,
+				B17A3C0C20B2FFF400104373 /* PKConfig.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		B17A3C0320B2F89E00104373 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B17A3BF320B2C79500104373 /* Main.storyboard */,
+				B17A3BF820B2C79A00104373 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E13A2D1E1AD82688C81492CA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E30E4C15BF5D2722EA0AE3C5 /* Pods-ParkingFCU.debug.xcconfig */,
+				5D0268ED2CA36A8953C240B2 /* Pods-ParkingFCU.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +134,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B17A3BFE20B2C79A00104373 /* Build configuration list for PBXNativeTarget "ParkingFCU" */;
 			buildPhases = (
+				EC1E46E2016A8BAE31A36F92 /* [CP] Check Pods Manifest.lock */,
 				B17A3BE820B2C79500104373 /* Sources */,
 				B17A3BE920B2C79500104373 /* Frameworks */,
 				B17A3BEA20B2C79500104373 /* Resources */,
+				2FB7D6515DE719B133E0A709 /* [CP] Embed Pods Frameworks */,
+				381231D61EBC634EC2C74DD7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,12 +196,84 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2FB7D6515DE719B133E0A709 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ParkingFCU/Pods-ParkingFCU-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParkingFCU/Pods-ParkingFCU-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		381231D61EBC634EC2C74DD7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ParkingFCU/Pods-ParkingFCU-resources.sh",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParkingFCU/Pods-ParkingFCU-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC1E46E2016A8BAE31A36F92 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ParkingFCU-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B17A3BE820B2C79500104373 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B17A3C0520B2F8F300104373 /* MainViewController.swift in Sources */,
+				B17A3C0D20B2FFF400104373 /* PKConfig.swift in Sources */,
+				B17A3C0720B2F90800104373 /* MonitorViewController.swift in Sources */,
 				B17A3BF220B2C79500104373 /* ViewController.swift in Sources */,
+				B17A3C0920B2F91400104373 /* ReportViewController.swift in Sources */,
+				B17A3C0B20B2F97700104373 /* PKVideo.swift in Sources */,
 				B17A3BF020B2C79500104373 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,7 +351,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -267,7 +405,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -278,11 +416,13 @@
 		};
 		B17A3BFF20B2C79A00104373 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E30E4C15BF5D2722EA0AE3C5 /* Pods-ParkingFCU.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XW3GGB6ENP;
 				INFOPLIST_FILE = ParkingFCU/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -290,17 +430,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = MCLAB.ParkingFCU;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		B17A3C0020B2C79A00104373 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D0268ED2CA36A8953C240B2 /* Pods-ParkingFCU.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XW3GGB6ENP;
 				INFOPLIST_FILE = ParkingFCU/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +450,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = MCLAB.ParkingFCU;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
