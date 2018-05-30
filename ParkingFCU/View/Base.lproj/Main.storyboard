@@ -113,25 +113,42 @@
             </objects>
             <point key="canvasLocation" x="1128.8" y="162.3688155922039"/>
         </scene>
-        <!--Report View Controller-->
+        <!--Monitor View Controller-->
         <scene sceneID="rij-Dt-L0C">
             <objects>
-                <viewController id="EW4-zE-OpW" customClass="ReportViewController" customModule="ParkingFCU" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="EW4-zE-OpW" customClass="MonitorViewController" customModule="ParkingFCU" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d5K-fd-P5a">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JOj-Qp-fa5" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="337" width="375" height="330"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="JOj-Qp-fa5" secondAttribute="height" multiplier="25:22" id="XU3-PO-Dk6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JOj-Qp-fa5" firstAttribute="leading" secondItem="aQ0-wZ-uaC" secondAttribute="leading" id="BwW-x7-izo"/>
+                            <constraint firstItem="JOj-Qp-fa5" firstAttribute="trailing" secondItem="aQ0-wZ-uaC" secondAttribute="trailing" id="VKR-kq-g9c"/>
+                            <constraint firstItem="JOj-Qp-fa5" firstAttribute="bottom" secondItem="aQ0-wZ-uaC" secondAttribute="bottom" id="enN-oQ-ucP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="aQ0-wZ-uaC"/>
                     </view>
+                    <connections>
+                        <outlet property="chartView" destination="JOj-Qp-fa5" id="Rmr-X6-R5l"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WKH-NS-hDh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="438" y="1107"/>
+            <point key="canvasLocation" x="437.60000000000002" y="1105.9970014992505"/>
         </scene>
-        <!--Monitor View Controller-->
+        <!--Report View Controller-->
         <scene sceneID="cZP-Cp-th6">
             <objects>
-                <viewController id="fpw-hD-eYs" customClass="MonitorViewController" customModule="ParkingFCU" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fpw-hD-eYs" customClass="ReportViewController" customModule="ParkingFCU" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bgR-yh-Gis">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
