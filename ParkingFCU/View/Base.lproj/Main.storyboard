@@ -121,6 +121,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Monitor_BG" translatesAutoresizingMaskIntoConstraints="NO" id="UMP-ps-w16">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L0c-NB-SeW" userLabel="Char_bg_color">
+                                <rect key="frame" x="0.0" y="337" width="375" height="330"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="L0c-NB-SeW" secondAttribute="height" multiplier="25:22" id="xIE-zT-5fb"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JOj-Qp-fa5" customClass="LineChartView" customModule="Charts">
                                 <rect key="frame" x="0.0" y="337" width="375" height="330"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -132,8 +142,15 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="JOj-Qp-fa5" firstAttribute="leading" secondItem="aQ0-wZ-uaC" secondAttribute="leading" id="BwW-x7-izo"/>
+                            <constraint firstItem="UMP-ps-w16" firstAttribute="trailing" secondItem="aQ0-wZ-uaC" secondAttribute="trailing" id="Dja-Mv-5bH"/>
+                            <constraint firstItem="UMP-ps-w16" firstAttribute="top" secondItem="d5K-fd-P5a" secondAttribute="top" id="J4j-bh-oG5"/>
+                            <constraint firstItem="UMP-ps-w16" firstAttribute="leading" secondItem="aQ0-wZ-uaC" secondAttribute="leading" id="OCO-pi-iXN"/>
                             <constraint firstItem="JOj-Qp-fa5" firstAttribute="trailing" secondItem="aQ0-wZ-uaC" secondAttribute="trailing" id="VKR-kq-g9c"/>
+                            <constraint firstItem="L0c-NB-SeW" firstAttribute="trailing" secondItem="aQ0-wZ-uaC" secondAttribute="trailing" id="WLi-5i-MVV"/>
+                            <constraint firstItem="L0c-NB-SeW" firstAttribute="leading" secondItem="aQ0-wZ-uaC" secondAttribute="leading" id="Y9A-GR-dv3"/>
                             <constraint firstItem="JOj-Qp-fa5" firstAttribute="bottom" secondItem="aQ0-wZ-uaC" secondAttribute="bottom" id="enN-oQ-ucP"/>
+                            <constraint firstItem="UMP-ps-w16" firstAttribute="bottom" secondItem="aQ0-wZ-uaC" secondAttribute="bottom" id="fvk-81-7WZ"/>
+                            <constraint firstItem="aQ0-wZ-uaC" firstAttribute="bottom" secondItem="L0c-NB-SeW" secondAttribute="bottom" id="mM8-8r-O5x"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aQ0-wZ-uaC"/>
                     </view>
@@ -180,6 +197,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Monitor_BG" width="375" height="667"/>
         <image name="main_bg_blue" width="375" height="282"/>
         <image name="main_bg_red" width="375" height="282"/>
         <image name="main_bg_yellow" width="375" height="105"/>

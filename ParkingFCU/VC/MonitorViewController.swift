@@ -11,9 +11,7 @@ import Charts
 
 class MonitorViewController: UIViewController , ChartViewDelegate{
     
-        
     @IBOutlet weak var chartView: LineChartView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 //        self.options = [.toggleValues,
@@ -31,6 +29,7 @@ class MonitorViewController: UIViewController , ChartViewDelegate{
 //                        .toggleAutoScaleMinMax,
 //                        .toggleData]
 //
+        
         chartView.delegate = self
         
         chartView.chartDescription?.enabled = false
@@ -49,7 +48,7 @@ class MonitorViewController: UIViewController , ChartViewDelegate{
         
         let xAxis = chartView.xAxis
         xAxis.labelFont = .systemFont(ofSize: 11)
-        xAxis.labelTextColor = .white
+        xAxis.labelTextColor = .red
         xAxis.drawAxisLineEnabled = false
         
         let leftAxis = chartView.leftAxis
@@ -60,7 +59,7 @@ class MonitorViewController: UIViewController , ChartViewDelegate{
         leftAxis.granularityEnabled = true
         
         let rightAxis = chartView.rightAxis
-        rightAxis.labelTextColor = .red
+        rightAxis.labelTextColor = UIColor(red: 51/255, green: 181/255, blue: 229/255, alpha: 1)
         rightAxis.axisMaximum = 100
         rightAxis.axisMinimum = 0
         rightAxis.granularityEnabled = false
