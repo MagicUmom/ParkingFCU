@@ -8,12 +8,16 @@
 
 import UIKit
 import Charts
+import WebKit
 
 class MonitorViewController: UIViewController , ChartViewDelegate{
     
+    @IBOutlet weak var ui_camera: UIView!
     @IBOutlet weak var chartView: LineChartView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        initWebCamera()
+        
 //        self.options = [.toggleValues,
 //                        .toggleFilled,
 //                        .toggleCircles,
@@ -149,7 +153,16 @@ class MonitorViewController: UIViewController , ChartViewDelegate{
         // Dispose of any resources that can be recreated.
     }
     
-
+    
+    func initWebCamera(){
+        let frame = CGRect(origin: CGPoint.zero, size: ui_camera.frame.size)
+        let webView = WKWebView.init(frame: frame)
+        let url = URL(string: "http://140.134.25.44:8081")
+        let request = NSURLRequest(url: url!)
+        webView.load(request as URLRequest)
+        ui_camera.addSubview(webView)
+        
+    }
     /*
     // MARK: - Navigation
 
