@@ -14,10 +14,41 @@ class MonitorViewController: UIViewController , ChartViewDelegate{
     
     @IBOutlet weak var ui_camera: UIView!
     @IBOutlet weak var chartView: LineChartView!
+    
+    @IBAction func btn_goRight(_ sender: Any) {
+        print("webPage : \(webPage), count: \(webViewArr.count)")
+        if webPage < webViewArr.count{
+            webViewArr[webPage-1].alpha = 0
+            webViewArr[webPage].alpha = 1
+            webPage += 1
+
+        }else{
+            
+        }
+    }
+    @IBAction func btn_goLeft(_ sender: Any) {
+        print("webPage : \(webPage), count: \(webViewArr.count)")
+
+        if webPage > 1{
+            webPage -= 1
+            webViewArr[webPage].alpha = 0
+            webViewArr[webPage-1].alpha = 1
+            
+        }else{
+            
+        }
+
+    }
+    
+    var webViewArr : [WKWebView] = [WKWebView]()
+    var webPage = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        initWebCamera()
-        
+        initWebCamera( WebSite: "https://www.yahoo.com")
+        initWebCamera( WebSite: "https://www.github.com")
+        initWebCamera( WebSite: "https://www.google.com")
+
 //        self.options = [.toggleValues,
 //                        .toggleFilled,
 //                        .toggleCircles,
@@ -154,14 +185,26 @@ class MonitorViewController: UIViewController , ChartViewDelegate{
     }
     
     
-    func initWebCamera(){
-        let frame = CGRect(origin: CGPoint.zero, size: ui_camera.frame.size)
-        let webView = WKWebView.init(frame: frame)
-        let url = URL(string: "http://140.134.25.44:8081")
+    func initWebCamera( WebSite: String){
+        let deSize : CGFloat = 60
+        let point = CGPoint.init(x: deSize/2, y: 0)
+        let size = CGSize.init(width: (ui_camera.frame.width - deSize), height: ui_camera.frame.height)
+        let frame = CGRect(origin: point , size: size)
+        var webView = WKWebView.init(frame: frame)
+//        let url = URL(string: "http://140.134.25.44:8081")
+        let url = URL(string: WebSite)
         let request = NSURLRequest(url: url!)
+        webView.scrollView.isScrollEnabled = false
         webView.load(request as URLRequest)
+        if webViewArr.count == 0 {
+            webView.alpha = 1
+            webPage = 1
+        }else{
+            webView.alpha = 0
+        }
         ui_camera.addSubview(webView)
-        
+        webViewArr.append(webView)
+
     }
     /*
     // MARK: - Navigation
@@ -172,5 +215,5 @@ class MonitorViewController: UIViewController , ChartViewDelegate{
         // Pass the selected object to the new view controller.
     }
     */
-
+    
 }
