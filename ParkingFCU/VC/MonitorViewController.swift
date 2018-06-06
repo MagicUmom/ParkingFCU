@@ -186,7 +186,7 @@ class MonitorViewController: UIViewController , ChartViewDelegate{
     
     
     func initWebCamera( WebSite: String){
-        let deSize : CGFloat = 60
+        let deSize : CGFloat = 0
         let point = CGPoint.init(x: deSize/2, y: 0)
         let size = CGSize.init(width: (ui_camera.frame.width - deSize), height: ui_camera.frame.height)
         let frame = CGRect(origin: point , size: size)
@@ -206,6 +206,7 @@ class MonitorViewController: UIViewController , ChartViewDelegate{
         webViewArr.append(webView)
 
     }
+    
     /*
     // MARK: - Navigation
 
