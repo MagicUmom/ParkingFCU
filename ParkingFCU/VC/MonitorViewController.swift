@@ -45,9 +45,9 @@ class MonitorViewController: UIViewController , ChartViewDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        initWebCamera( WebSite: "https://www.yahoo.com")
-        initWebCamera( WebSite: "https://www.github.com")
-        initWebCamera( WebSite: "https://www.google.com")
+        initWebCamera( WebSite: "http://140.134.24.241:8081")
+        initWebCamera( WebSite: "http://140.134.24.242:8081")
+        initWebCamera( WebSite: "http://140.134.24.243:8081")
 
 //        self.options = [.toggleValues,
 //                        .toggleFilled,
@@ -186,7 +186,7 @@ class MonitorViewController: UIViewController , ChartViewDelegate{
     
     
     func initWebCamera( WebSite: String){
-        let deSize : CGFloat = 0
+        let deSize : CGFloat = -100
         let point = CGPoint.init(x: deSize/2, y: 0)
         let size = CGSize.init(width: (ui_camera.frame.width - deSize), height: ui_camera.frame.height)
         let frame = CGRect(origin: point , size: size)
